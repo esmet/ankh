@@ -873,7 +873,7 @@ func main() {
 					}
 				}
 
-				newAnkhConfig.Include = append(ctx.AnkhConfig.Include, *sourceArg)
+				newAnkhConfig.Include = append(newAnkhConfig.Include, *sourceArg)
 				ctx.Logger.Infof("Added configuration source \"%v\" to config path \"%v\"",
 					*sourceArg, ctx.AnkhConfigPath)
 
